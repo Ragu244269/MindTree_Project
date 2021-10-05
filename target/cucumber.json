@@ -1,0 +1,170 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Estimation for Living Expenses",
+        "description": "",
+        "id": "anz-repayments-calculator;estimation-for-living-expenses",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3006711200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Living Expenses with details",
+            "match": {
+              "location": "ANZ_TC.details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "AT",
+                  "ND",
+                  "AProperty",
+                  "YI",
+                  "YOI",
+                  "LE",
+                  "CHLR",
+                  "OLR",
+                  "OC",
+                  "TCCL"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "Single",
+                  "0",
+                  "Home to live in",
+                  "80000",
+                  "10000",
+                  "500",
+                  "0",
+                  "275",
+                  "0",
+                  "10000"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 180483700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Borrowing estimate as \"Y\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Y",
+                  "offset": 23
+                }
+              ],
+              "location": "ANZ_TC.estimate(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 295490800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Start Over",
+            "match": {
+              "location": "ANZ_TC.startOver()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2057845000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Living Expenses with details",
+            "match": {
+              "location": "ANZ_TC.details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "AT",
+                  "ND",
+                  "AProperty",
+                  "YI",
+                  "YOI",
+                  "LE",
+                  "CHLR",
+                  "OLR",
+                  "OC",
+                  "TCCL"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Single",
+                  "0",
+                  "Home to live in",
+                  "0",
+                  "0",
+                  "1",
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 169841200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Borrowing estimate as \"N\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "N",
+                  "offset": 23
+                }
+              ],
+              "location": "ANZ_TC.estimate(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@FunctionalTesting"
+          }
+        ]
+      }
+    ],
+    "name": "ANZ Repayments Calculator",
+    "description": "",
+    "id": "anz-repayments-calculator",
+    "keyword": "Feature",
+    "uri": "ANZ.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@ANZ"
+      }
+    ]
+  }
+]

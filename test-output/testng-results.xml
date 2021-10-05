@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14348" started-at="2021-10-05T05:03:20Z" finished-at="2021-10-05T05:03:34Z">
+    <groups>
+      <group name="examples-testng">
+        <method signature="TestRunner.invoke()[pri:0, instance:Runner.TestRunner@5383967b]" name="invoke" class="Runner.TestRunner"/>
+      </group> <!-- examples-testng -->
+    </groups>
+    <test name="Default test" duration-ms="14348" started-at="2021-10-05T05:03:20Z" finished-at="2021-10-05T05:03:34Z">
+      <class name="Runner.TestRunner">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:Runner.TestRunner@5383967b]" name="browserLaunch" is-config="true" duration-ms="7706" started-at="2021-10-05T10:33:20Z" finished-at="2021-10-05T10:33:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method status="PASS" signature="invoke()[pri:0, instance:Runner.TestRunner@5383967b]" name="invoke" duration-ms="5981" started-at="2021-10-05T10:33:28Z" description="Example of using TestNGCucumberRunner to invoke cucumber" finished-at="2021-10-05T10:33:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invoke -->
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:Runner.TestRunner@5383967b]" name="browserClose" is-config="true" duration-ms="647" started-at="2021-10-05T10:33:34Z" finished-at="2021-10-05T10:33:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- Runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
